@@ -1,17 +1,68 @@
 body {
 
     background: url(http://cdn3.rosannadavisonnutrition.com/wp-content/uploads/2015/04/5.-Herbs-Spices.jpg);
+    font-family: 'Libre Baskerville', serif;
+    background-size: 100%
+}
+
+h1 {
+    font-size: 100px;
+    color: DarkSalmon;
+}
+
+h3{
+    font-size: 40px;
+    color: DarkSalmon;
+}
+
+#individual_images {
+    max-height: 150px;
+    max-width: 200px;
+}
+
+.ui.segment {
+background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.png);
 }
 
 .container {
-    max-width: 960px;
     margin: 0 auto;
     height: 960px;
    background-size: 100% 100%;
    background-color: maroon;
-   position: fixed;
 }
 
-.shadow {
-  box-shadow: 3px 3px 10px 16px #ccc;
+
+#top{
+    text-align: center;
 }
+
+.ui[class*="very padded"].segment {
+    padding: 15px;
+}
+
+
+
+.enter {
+    position: relative;
+   background-color: LightSalmon;
+  margin-right: 10px;
+  padding-left: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.content {
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

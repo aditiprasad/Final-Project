@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root "welcome#index"
 
-  get "/images" => "images#index"
-  # get "/images" => "elemen#index"
   get "/spices.json" => "spices#index"
+  get "/recipes" => "recipes#index"
+
 
 
 
