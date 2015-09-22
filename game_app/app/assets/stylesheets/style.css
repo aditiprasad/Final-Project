@@ -17,7 +17,7 @@ h3{
 
 #individual_images {
     max-height: 150px;
-    max-width: 200px;
+    max-width: 320px;
 }
 
 .ui.segment {
@@ -55,7 +55,9 @@ background-image: url(http://www.transparenttextures.com/patterns/asfalt-dark.pn
 }
 
 
-
+a {
+  display: initial;
+}
 
 
 

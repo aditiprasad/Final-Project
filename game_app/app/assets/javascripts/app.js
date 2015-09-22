@@ -13,7 +13,7 @@ $(function(){
 
     $(".ui.page").removeClass("active");
     $(".ui.page").addClass("disabled");
-
+     $('.ui.accordion').accordion();
     $.ajax({
         method: "GET",
         url: "/spices.json",
@@ -59,7 +59,7 @@ $(function(){
 
                 var $content = $("<div>").attr("class", "content");
                 var $input = $("<input>").attr("type", "text").attr("class","answers");
-                var $submit = $("<button>Enter</button>").attr("class", "enter");
+                var $submit = $("<button>Enter</button>").attr("class", "ui orange basic button enter");
                $card.append($image).append($img);
                $content.append($input);
                $content.append($submit)
@@ -84,9 +84,13 @@ $(function(){
 
                 //making the accordian 
                 var $title = $("<div>").attr("class", "title")
-                var $accordianContent = $("<div>").attr("class", "content")
-                $(".ui.accordian").append($title);
-                $(".ui.accordian").append($accordianContent);
+                var $p1 = $("<p>Spice/Herb</p>")
+                $title.append($p1);
+                var $accordionContent = $("<div>").attr("class", "content")
+                var $p2 = $("<p>" + "<a href=" + dataSource + ">" + spice + "</a>" + "</p>");
+                $accordionContent.append($p2)
+                $(".ui.styled.fluid.accordion").append($title);
+                $(".ui.styled.fluid.accordion").append($accordionContent);
 
                 console.log(dataSource);
 
@@ -108,7 +112,9 @@ $(function(){
                     })
                 });
 
-
+                $("#restart").click(function(){
+                    location.reload();
+                })
 
             });
 
