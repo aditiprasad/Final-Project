@@ -13,7 +13,7 @@ $(function(){
 
     $(".ui.page").removeClass("active");
     $(".ui.page").addClass("disabled");
-     $('.ui.accordion').accordion();
+    $('.ui.accordion').accordion();
     $.ajax({
         method: "GET",
         url: "/spices.json",
@@ -34,7 +34,7 @@ $(function(){
             });
                 // console.log(imageArr);
 
-                //a for loop to randomly generate 5 images from the imageArr
+                //a for loop to randomly generate 4 images from the imageArr
                 for(var i=0; i<4; i++){
                     randomImages = imageArr[Math.floor(Math.random() * imageArr.length)];
                     randomImagesArr.push(randomImages);

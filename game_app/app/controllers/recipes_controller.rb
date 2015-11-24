@@ -6,3 +6,4 @@ class RecipesController < ApplicationController
         render json: @render
     end
 end
+
